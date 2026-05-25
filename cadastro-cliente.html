@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro rápido de cliente</title>
+
+    /* Perguntar o nome do cliente
+    Perguntar o telefone
+    Perguntar a origem (Instagram, indicação, Google, etc.)
+    Perguntar o motivo do contato (rescisão indireta, hora extra, etc.)
+    Calcular a data de hoje + 7 dias (pra sugerir um retorno)
+    Mostrar um resumo de tudo na tela */ 
+
+    <script>
+
+        const nome = prompt('Qual é o nome do cliente?')
+        const tel = prompt('Qual o telefone do cliente?')
+        const origem = prompt('Qual a origem do cliente?')
+        const motivo = prompt('Qual o motivo do contato?')
+        const hoje = new Date()
+        const retorno = new Date()
+        retorno.setDate(retorno.getDate() + 7)
+        const dataFormatada = hoje.toLocaleDateString("pt-BR")
+        const retornoFormatado = retorno.toLocaleDateString("pt-BR")
+
+        alert("📋 Cliente cadastrado\n\n" + 
+                    "Nome: " + nome + 
+                    "\nTelefone: " + tel + 
+                    "\nOrigem: " + origem + 
+                    "\nMotivo: " + motivo +
+                    "\nData do Contato: " + dataFormatada +
+                    "\nRetorno: " + retornoFormatado          
+                )
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
