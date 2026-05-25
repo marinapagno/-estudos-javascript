@@ -1,0 +1,17 @@
+# Arquivos do macOS
+.DS_Store
+**/.DS_Store
+
+# Pastas e arquivos de editores
+.vscode/
+.idea/
+
+# Node (vai usar no futuro)
+node_modules/
+
+# Logs
+*.log
+
+# Variáveis de ambiente (importante quando chegar no Supabase)
+.env
+.env.local
